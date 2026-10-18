@@ -1,0 +1,369 @@
+/* IMPORT GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+/* CSS Variables */
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Martel Sans', sans-serif;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark-overlay: rgba(0, 0, 0, 0.65);
+    --color-light-bg: rgba(0, 0, 0, 0.5);
+    --color-divider: #333;
+    --color-box: #2d2d2d;
+    --color-box-hover: #414141;
+    --color-red: red;
+    --color-border: rgba(255, 255, 255, 0.4);
+
+    --font-xs: 0.875rem;
+    --font-sm: 1rem;
+    --font-md: 1.2rem;
+    --font-lg: 1.5rem;
+    --font-xl: 2.5rem;
+    --font-xxl: 3rem;
+
+    --padding-section: 60px 5%;
+    --padding-btn: 8px 16px;
+    --padding-btn-lg: 12px 24px;
+    --border-radius: 4px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body{
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* HEADER */
+.HEADER{
+  height: 90vh;
+  background-image: url("./MEDIA/HEADER BACKGROUND.jpg");
+  background-size: cover;
+  background-position: center;
+  POSITION: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.OVERLAY{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark-overlay);
+  z-index: 1;
+}
+
+.NAVBAR{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+}
+
+.NAVBAR-LOGO img{
+  width: 130px;
+}
+
+.NAVBAR-ACTION{
+  display: flex;
+  gap: 10px;
+}
+
+.BTN{
+  padding: var(--padding-btn);
+  font-size: var(--font-xs);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-white);
+  background-color: var(--color-light-bg);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.BTN-SIGNIN{
+  BACKGROUND-COLOR: var(--color-red);
+  BORDER: none;
+  font-weight: 500;
+}
+
+.BANNER{
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  text-align: center;
+  padding: 0 20px 60px;
+}
+
+.BANNER-TITLE{
+  font-family: var(--font-secondary);
+  font-size: var(--font-xxl);
+  font-weight: 700;
+}
+
+.BANNER-SUBTITLE{
+  font-size: var(--font-lg);
+  margin-top: 1rem;
+}
+
+.BANNER-DESCRIPTION{
+  font-size: var(--font-md);
+  margin-top: 1rem 0;
+}
+
+.BANNER-FORM{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.BANNER-EMAIL{
+  padding: 12px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-light-bg);
+  color: var(--color-white);
+  font-size: 16px;
+}
+
+.BTN-GETSTARTED{
+  background-color: var(--color-red);
+  padding: var(--padding-btn-lg);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+
+.DIVIDER{
+  height: 7px;
+  background-color: var(--color-divider);
+  width: 100%;
+}
+
+.FEATURE{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-section);
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.FEATURE-TEXT{
+  flex: 1;
+  min-width: 300px;
+}
+
+.FEATURE-TEXT h1{
+  font-size: var(--font-xl);
+  margin-bottom: 1rem;
+}
+
+.FEATURE-TEXT p{
+  font-size: var(--font-md);
+  line-height: 1.5;
+}
+
+.FEATURE-MEDIA{
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.FEATURE-MEDIA img{
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.FEATURE-MEDIA video{
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  width: 75%;
+  z-index: 0;
+}
+
+
+
+.FEATURE-REVERSE {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-section);
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.FAQ-SECTION{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: var(--padding-section);
+  text-align: center;
+}
+
+.FAQ-SECION h2{
+  font-size: var(--font-xl);
+  margin-bottom: 30px;
+}
+
+.FAQ-BOX{
+  background-color: var(--color-box);
+  margin: 10px auto;
+  max-width: 800px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-md);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.FAQ-BOX:hover{
+  background-color: var(--color-box-hover);
+}
+
+.FAQ-BOX svg{
+  filter: invert(1);
+}
+
+
+.FOOTER{
+  padding: var(--padding-section);
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.FOOTER-CONTACT{
+  margin-bottom: 30px;
+  font-size: var(--font-sm);
+}
+
+.FOOTER-LINKS{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.FOOTER-COLUMNS{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.FOOTER a{
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: var(--font-xs);
+}
+
+.FOOTER a:hover{
+  text-decoration: underline;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .BANNER-TITLE{
+    font-size: var(--font-xl);
+  }
+
+  .BANNER-TITLE, .BANNER-desc{
+    font-size: var(--font-sm);
+  }
+
+  .BTN-GET-STARTED{
+    font-size: var(--font-sm);
+    padding: 10px 20px;
+  }
+
+.FEATURE{
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .FEATURE-MEDIA VIDEO{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 75%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
