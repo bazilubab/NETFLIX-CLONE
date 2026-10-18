@@ -22,9 +22,15 @@ This isn't just another generic template. This is a pixel-perfect, highly respon
 ## 🎥 The Trailer (Project Demo)
 
 <div align="center">
-  <!-- Note: Make sure your video is renamed to 'netflix-clone-video.mp4' inside your MEDIA folder -->
-  <video src="./MEDIA/NETFLIX-CLONE-VIDEO.mp4" width="100%" autoplay loop muted controls style="border-radius: 10px; border: 1px solid #333;"></video>
+  
+
+
+
 </div>
+
+
+https://github.com/user-attachments/assets/de32caf7-91e4-4c19-9a0a-1adb42c1f9dc
+
 
 ---
 
